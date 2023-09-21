@@ -1,0 +1,41 @@
+:root {
+  --padding-1: 5rem;
+  --burnt-orange: #bf5215;
+  --lush-green: #57732d;
+  --white: #fff;
+}
+
+section {
+  height: 80rem;
+}
+
+.hero {
+  position: relative;
+  /* top: 50%;
+  transform: translate(0 -50%); */
+}
+
+.title {
+  font-size: 11.4rem;
+  padding-bottom: var(--padding-1);
+  color: var(--burnt-orange);
+}
+
+.paragraph {
+  font-size: 2.8rem;
+  width: 45%;
+  line-height: 5rem;
+  padding-bottom: var(--padding-1);
+  color: var(--lush-green);
+}
+
+.btn-booking {
+  color: var(--white);
+  background-color: var(--burnt-orange);
+  margin-right: 5rem;
+}
+
+.btn-menu {
+  color: var(--white);
+  background-color: var(--lush-green);
+}
