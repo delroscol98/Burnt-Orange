@@ -2,17 +2,34 @@
   --padding-1: 5rem;
   --burnt-orange: #bf5215;
   --lush-green: #57732d;
-  --white: #fff;
+  --white: rgb(255, 255, 255);
 }
 
 section {
+  position: relative;
   height: 80rem;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 30%,
+      rgba(255, 255, 255, 0.9) 50%,
+      transparent 75%
+    ),
+    url("../../../assets/Burnt-Orange.jpeg");
+  background-position: bottom;
+  background-size: cover;
 }
 
 .hero {
   position: relative;
-  /* top: 50%;
-  transform: translate(0 -50%); */
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10rem;
 }
 
 .title {

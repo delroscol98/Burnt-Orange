@@ -4,6 +4,7 @@ import classes from "./Hero.module.css";
 const Hero = () => {
   return (
     <section>
+      <div className={classes.background}></div>
       <div className={classes.hero}>
         <h1 className={classes.title}>Burnt Orange</h1>
         <p className={classes.paragraph}>
