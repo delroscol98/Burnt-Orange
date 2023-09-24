@@ -1,26 +1,56 @@
-.nav {
+.menu-trigger {
   position: fixed;
+  top: 2rem;
+  right: 6rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
   z-index: 1;
+  box-shadow: 0px 1px 50px black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  width: 20rem;
+  z-index: 1;
+  box-shadow: 0px 1px 50px black;
+}
+
+h3 {
   width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: var(--burnt-orange);
 }
 
 ul {
-  display: flex;
-  align-items: center;
-  height: 12.5vh;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-li {
-  margin-left: 6rem;
   list-style: none;
-  font-size: 2.8rem;
-  font-weight: 400;
 }
 
-.btn-booking {
-  color: var(--white);
-  background-color: var(--burnt-orange);
-  position: absolute;
-  right: 6rem;
+.dropdown-menu ul li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover a {
+  color: var(--lush-green);
+  cursor: pointer;
 }

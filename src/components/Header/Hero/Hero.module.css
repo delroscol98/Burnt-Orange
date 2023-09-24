@@ -33,6 +33,7 @@ section {
   font-size: 11.4rem;
   padding-bottom: var(--padding-1);
   color: var(--burnt-orange);
+  width: 75%;
 }
 
 .paragraph {
