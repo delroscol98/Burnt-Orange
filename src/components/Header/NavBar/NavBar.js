@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import NavItem from "./NavItem";
+import Button from "../../UI/Button";
 
 import classes from "./NavBar.module.css";
 
@@ -9,6 +10,7 @@ const navItems = [
   "Lunch",
   "High Tea",
   "Functions",
+  "Gift Cards",
   "Contact Us",
 ];
 
@@ -63,6 +65,12 @@ const NavBar = (props) => {
                 return <NavItem text={item} key={index} />;
               })}
             </ul>
+            <Button
+              className={classes["btn-booking"]}
+              onClick={props.clickBooking}
+            >
+              Book a Table
+            </Button>
           </div>
         )}
       </div>
