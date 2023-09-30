@@ -7,13 +7,19 @@ const CardLeft = (props) => {
     <div className={classes.card}>
       <div className={classes["card-inner"]}>
         <div className={classes["card-front"]}>
-          <div className={classes["background-one"]}>
+          <div className={classes["front-background-one"]}>
             <h2 className={classes.title}>{props.content.front}</h2>
           </div>
         </div>
         <div className={classes["card-back"]}>
-          <p className={classes["card-back-description"]}>BACK</p>
-          <Button className={classes.button}>BUTTON</Button>
+          <div className={classes["back-background-one"]}>
+            <p className={classes["card-back-description"]}>
+              {props.content.back.description}
+            </p>
+            <Button className={classes.button}>
+              {props.content.back.button}
+            </Button>
+          </div>
         </div>
       </div>
     </div>

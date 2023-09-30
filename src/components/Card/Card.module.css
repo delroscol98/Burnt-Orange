@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
 }
 
@@ -8,7 +7,6 @@
   width: 400px;
   height: 600px;
   perspective: 1000px;
-  border: 1px solid red;
 }
 
 .card-inner {
@@ -42,9 +40,10 @@
 .title {
   color: white;
   font-size: 3.5rem;
+  font-weight: 500;
 }
 
-.background-one {
+.front-background-one {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,11 +55,24 @@
       rgba(191, 82, 21, 0.5) 100%
     ),
     url(../../assets/cala-w6ftFbPCs9I-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
   color: white;
 }
 
-.background-two {
+.back-background-one {
+  background: linear-gradient(
+    153deg,
+    rgb(236, 159, 5) 0%,
+    rgb(191, 82, 21) 100%
+  );
+  height: 100%;
+}
+
+.back-background-one .button {
+  color: var(--burnt-orange);
+}
+
+.front-background-two {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +84,20 @@
       rgba(87, 115, 45, 0.5) 100%
     ),
     url(../../assets/fabio-alves-BpeTaQozgN4-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
   color: white;
 }
 
-.background-three {
+.back-background-two {
+  background: linear-gradient(153deg, #83d475 0%, #57732d 100%);
+  height: 100%;
+}
+
+.back-background-two .button {
+  color: var(--lush-green);
+}
+
+.front-background-three {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,4 +111,27 @@
     url(../../assets/sebastian-coman-photography-Ekqld5tI3JA-unsplash.jpg);
   background-size: cover;
   color: white;
+}
+
+.back-background-three {
+  background: linear-gradient(153deg, #8fc9ff 0%, #9a8efa 100%);
+  height: 100%;
+}
+
+.back-background-three .button {
+  color: rgb(152, 153, 252);
+}
+
+.button {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.card-back-description {
+  color: white;
+  padding: 3rem;
+  font-size: 2.2rem;
 }
