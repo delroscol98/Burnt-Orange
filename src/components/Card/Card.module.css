@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+  border: 1px solid red;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.title {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.background-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(191, 82, 21, 0.5) 0%,
+      rgba(191, 82, 21, 0.5) 100%
+    ),
+    url(../../assets/cala-w6ftFbPCs9I-unsplash.jpg);
+  background-size: contain;
+  color: white;
+}
+
+.background-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(87, 115, 45, 0.5) 0%,
+      rgba(87, 115, 45, 0.5) 100%
+    ),
+    url(../../assets/fabio-alves-BpeTaQozgN4-unsplash.jpg);
+  background-size: contain;
+  color: white;
+}
+
+.background-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(152, 153, 252, 0.5) 0%,
+      rgba(152, 153, 252, 0.5) 100%
+    ),
+    url(../../assets/sebastian-coman-photography-Ekqld5tI3JA-unsplash.jpg);
+  background-size: cover;
+  color: white;
+}
