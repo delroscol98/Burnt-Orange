@@ -123,11 +123,11 @@
 }
 
 .button {
-  position: absolute;
+  position: absolute !important;
   bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: white;
+  background-color: white !important;
 }
 
 .card-back-description {
