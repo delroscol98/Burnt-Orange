@@ -1,0 +1,34 @@
+.container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 6rem;
+}
+
+.img-container {
+  background-image: url("../../assets/img141.jpeg");
+  background-size: cover;
+  max-width: 100%;
+}
+
+.text-container {
+  margin: 6rem 0;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.text {
+  margin-bottom: 4rem;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  font-size: 1.5rem;
+  color: var(--burnt-orange);
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid var(--burnt-orange);
+  padding: 0.3rem;
+}
