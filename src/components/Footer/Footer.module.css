@@ -1,0 +1,33 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+h4 {
+  color: var(--burnt-orange);
+  font-size: 2rem;
+}
+
+.links {
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.icon {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
