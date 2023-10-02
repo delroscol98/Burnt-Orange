@@ -27,9 +27,6 @@ const content = {
 const Footer = () => {
   return (
     <Section className={classes.footer}>
-      <h2 className={classes.title} style={{ margin: 0 }}>
-        Burnt Orange
-      </h2>
       <FooterMain content={content.main} />
       <FooterMenus content={content.menus} />
       <FooterFunctions content={content.functions} />

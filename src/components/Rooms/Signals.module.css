@@ -21,6 +21,8 @@
 
 .text {
   margin-bottom: 4rem;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .btn-text:link,

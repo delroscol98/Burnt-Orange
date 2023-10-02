@@ -6,19 +6,16 @@
   margin-bottom: 3rem;
 }
 
-.title {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
 h4 {
+  font-family: "Cormorant Garamond", serif;
   color: var(--burnt-orange);
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 .links {
-  font-size: 1.5rem;
-  line-height: 2;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .icons-container {

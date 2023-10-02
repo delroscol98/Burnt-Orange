@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 *,
 *::after,
@@ -10,7 +11,8 @@
 
 html {
   font-size: calc(5px + 0.390625vw);
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
 }
 
 :root {
-  --padding-1: 5rem;
+  --padding-1: 2rem;
   --burnt-orange: rgb(191, 82, 21);
   --lush-green: rgb(87, 115, 45);
   --white: rgb(255, 255, 255);

@@ -9,11 +9,7 @@ const FooterMain = (props) => {
       <h4>Details</h4>
       <ul>
         {props.content.map((item) => {
-          return (
-            <li className={classes.links}>
-              <a href="#top">{item}</a>
-            </li>
-          );
+          return <li className={classes.links}>{item}</li>;
         })}
         <div className={classes["icons-container"]}>
           <a href="#top">

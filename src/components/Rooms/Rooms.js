@@ -6,8 +6,8 @@ const Rooms = () => {
     <div
       style={{
         backgroundColor: "#F8F3EE",
-        paddingTop: "40rem",
-        marginTop: "-40rem",
+        paddingTop: "30rem",
+        marginTop: "-30rem",
       }}
     >
       <Signals />

@@ -8,6 +8,7 @@
 .img-container {
   background-image: url("../../assets/img141.jpeg");
   background-size: cover;
+  background-position: bottom;
   max-width: 100%;
 }
 
@@ -21,6 +22,8 @@
 
 .text {
   margin-bottom: 4rem;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .btn-text:link,

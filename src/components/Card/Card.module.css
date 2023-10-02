@@ -5,7 +5,7 @@
 
 .card {
   width: 400px;
-  height: 600px;
+  height: 500px;
   perspective: 1000px;
 }
 
@@ -85,6 +85,7 @@
     ),
     url(../../assets/fabio-alves-BpeTaQozgN4-unsplash.jpg);
   background-size: cover;
+  background-position: bottom;
   color: white;
 }
 
@@ -133,5 +134,6 @@
 .card-back-description {
   color: white;
   padding: 3rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  line-height: 1.5;
 }
